@@ -1,0 +1,64 @@
+body {
+  background: url("../images/assault.png");
+  margin: 0px;
+  padding: 0px; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    margin: 0px;
+    padding: 10px 0px; }
+  body h1 {
+    color: #131922; }
+  body .container {
+    width: 960px;
+    margin: auto; }
+
+header {
+  color: #131922;
+  background: #e0e6ed;
+  background: -moz-linear-gradient(top, #e0e6ed 0%, #5f7ca3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0e6ed), color-stop(100%, #5f7ca3));
+  background: -webkit-linear-gradient(top, #e0e6ed 0%, #5f7ca3 100%);
+  background: -o-linear-gradient(top, #e0e6ed 0%, #5f7ca3 100%);
+  background: -ms-linear-gradient(top, #e0e6ed 0%, #5f7ca3 100%);
+  background: linear-gradient(to bottom, #e0e6ed 0%, #5f7ca3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e6ed', endColorstr='#5f7ca3',GradientType=0 ); }
+  header .container nav#sitenav ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px; }
+    header .container nav#sitenav ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      header .container nav#sitenav ul li a {
+        text-decoration: none;
+        color: #e0e6ed; }
+      header .container nav#sitenav ul li a:hover {
+        color: #131922;
+        background-color: #e0e6ed; }
+
+div[role="main"] {
+  background-color: #e0e6ed; }
+  div[role="main"] h1, div[role="main"] h2, div[role="main"] h3, div[role="main"] h4, div[role="main"] h5, div[role="main"] h6 {
+    color: #5fa364; }
+  div[role="main"] article aside {
+    font-size: 14px;
+    font-weight: bold;
+    float: right;
+    padding: 20px;
+    max-width: 100px; }
+    div[role="main"] article aside p:before {
+      content: "\""; }
+    div[role="main"] article aside p:after {
+      content: "\""; }
+
+footer ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none; }
+  footer ul li {
+    display: inline-block; }
+    footer ul li a {
+      text-decoration: none;
+      color: #e0e6ed; }
+    footer ul li a:hover {
+      color: #5fa364;
+      text-decoration: underline; }

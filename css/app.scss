@@ -1,0 +1,104 @@
+// Variables
+$primary: #5F7CA3;
+$secondary: #5FA364;
+$light: #E0E6ED;
+$dark: #131922;
+$width: 960px;
+
+
+// Mixins
+@mixin vertical-gradient($light, $dark) {
+	background: $light;
+	background: -moz-linear-gradient(top,  $light 0%, $dark 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$light), color-stop(100%,$dark));
+	background: -webkit-linear-gradient(top,  $light 0%,$dark 100%);
+	background: -o-linear-gradient(top,  $light 0%,$dark 100%);
+	background: -ms-linear-gradient(top,  $light 0%,$dark 100%);
+	background: linear-gradient(to bottom,  $light 0%,$dark 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$light}', endColorstr='#{$dark}',GradientType=0 );
+}
+
+body {
+	h1,h2,h3,h4,h5,h6 {
+		margin: 0px;
+		padding: 10px 0px;
+	}
+	h1 {
+		color: $dark;
+	}
+	background: url('../images/assault.png');
+	margin: 0px;
+	padding: 0px;
+	.container{
+		width: $width;
+		margin: auto;
+	}
+}
+
+header {
+	color: $dark;
+	@include vertical-gradient($light, $primary);
+	.container {
+		nav#sitenav {
+			ul {
+				list-style-type: none;
+				padding: 0px;
+				margin: 0px;
+				li {
+					display: inline-block;
+					margin-right: 10px;
+					a {
+						text-decoration: none;
+						color: $light;
+					}
+					a:hover {
+						color: $dark;
+						background-color: $light;
+					}
+				}
+			}
+		}
+	}
+}
+
+div[role="main"] {
+	background-color: $light;
+	h1,h2,h3,h4,h5,h6 {
+		color: $secondary;
+	}
+	article {
+		aside {
+			font-size: 14px;
+			font-weight: bold;
+			float: right;
+			padding: 20px;
+			max-width: 100px;
+			p:before {
+				content: "\"";
+			}
+			p:after {
+				content: "\"";
+			}
+		}
+	}
+}
+
+footer {
+	ul {
+		margin: 0px;
+		padding: 0px;
+		list-style-type: none;
+		li {
+			display: inline-block;
+			a {
+				text-decoration: none;
+				color: $light;
+			}
+			a:hover {
+				color: $secondary;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
